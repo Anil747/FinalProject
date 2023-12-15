@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | FinBank</title>
+  <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+  <!-- css -->
+  <link rel="stylesheet" href="../css/styles.css">
+  <!-- fontawesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <main>
+    <nav>
+      <div class="nav-center section-center">
+        <div class="nav-logo">
+          <h4>Fin<span>Bank</span></h4>
+        </div>
+
+        <div class="nav-links">
+          <a href="../index.html">Home</a>
+          <a id="register-link" href="./register.html">Register</a>
+          <a id="login-link" href="./login.html">Login</a>
+          <li id="logout-link" style="display: none;"><a href="/">Logout</a></li>
+          <a id= "transaction-link" href="./transactions.html">Transaction</a>
+          <a href="./aboutus.html">About Us</a>
+        </div>
+      </div>
+    </nav>
+
+    <section id="login">
+      <div id="login-center" class="section-center">
+        <form class="form" id="login-form" action="./transactions.html">
+          <div class="form-header">
+            <h2>Sign In</h2>
+          </div>
+
+          <!-- login btns -->
+          <div class="login-btns">
+            <a href="" class="login"><span><img src="../assets/apple.svg" alt="apple" /></span>Log in with
+              Apple</a>
+            <a href="" class="login"><span><img src="../assets/google.svg" alt="google" /></span>Log in with
+              Google
+            </a>
+          </div>
+
+          <div class="divider">
+            <hr />
+            <p>or</p>
+            <hr />
+          </div>
+
+          <!-- input boxes -->
+          <article>
+            <input type="text" required placeholder="Please enter your email." class="form-item" />
+            <input type="password" required placeholder="Password:" class="form-item" />
+          </article>
+
+          <!-- row 1 -->
+          <article class="row-1">
+            <div><input type="checkbox" />&nbsp;&nbsp;Remember me</div>
+            <a href="" class="link">Forget your password?</a>
+          </article>
+
+          <!-- submit btn -->
+          <button type="submit"  class="submit-btn">Sign In</button>
+
+          <!-- row 2 -->
+          <article class="row-2">
+            <p>Haven't got an account?</p>
+            <a href="./register.html" class="link">Sign Up</a>
+          </article>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-text">
+        <h5>FinBank &copy;2023 | All rights reserved</h5>
+      </div>
+    </footer>
+  </main>
+  <script src="../js/login.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+
+</html>

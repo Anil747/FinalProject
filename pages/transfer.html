@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transfer | FinBank</title>
+    <link
+      rel="shortcut icon"
+      href="../assets/favicon.ico"
+      type="image/x-icon"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+
+  <body>
+    <main>
+      <nav>
+        <div class="nav-center section-center">
+          <div class="nav-logo">
+            <h4>Fin<span>Bank</span></h4>
+          </div>
+
+          <div class="nav-links">
+            <a href="../index.html">Home</a>
+          <a id="register-link" href="./register.html">Register</a>
+          <a id="login-link" href="./login.html">Login</a>
+          <li id="logout-link" style="display: none;"><a href="/">Logout</a></li>
+          <a id= "transaction-link" href="./transactions.html">Transaction</a>
+          <a href="./aboutus.html">About Us</a>
+          </div>
+        </div>
+      </nav>
+
+      <section class="empty-page">
+        <form class="form transaction-form" action="./transactions.html">
+          <div class="form-header">
+            <h2>Transfer</h2>
+          </div>
+
+          <article class="transaction-form-article">
+            <div>
+              <label for="recipient">Recipient:</label>
+              <br>
+              <input type="text" class="transaction-form-input"  id="recipient" name="recipient" required />
+              <br>
+              <label for="amount">Amount:</label>
+              <br>
+              <input type="number" class="transaction-form-input"  id="amount" name="amount" required />
+            </div>
+          </article>
+          <br>
+          <button type="submit" class="submit-btn">Send</button>
+        </form>
+      </section>
+      <footer>
+        <div class="footer-text">
+          <h5>FinBank &copy;2023 | All rights reserved</h5>
+        </div>
+      </footer>
+    </main>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
